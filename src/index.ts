@@ -55,7 +55,7 @@ export default function createStatelessServer({
         `?access_token=${config.gitlabPersonalAccessToken}`,
       )
 
-      return { content: [{ type: 'text', text: url }] }
+      return { content: [{ type: 'text', text: `Image URL: ${url}` }] }
     },
   )
 
