@@ -1,6 +1,6 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
-import { z } from 'zod'
 import { joinURL } from 'ufo'
+import { z } from 'zod'
 
 // Define configuration schema to require configuration at connection time
 export const configSchema = z.object({
@@ -15,7 +15,7 @@ export const configSchema = z.object({
     .describe('GitLab personal access token for authentication'),
 })
 
-type StatelessServerParams = {
+interface StatelessServerParams {
   config: z.infer<typeof configSchema>
 }
 
@@ -23,7 +23,7 @@ export default function createStatelessServer({
   config,
 }: StatelessServerParams) {
   const server = new McpServer({
-    name: 'GitLab Utils MCP Server',
+    name: 'Gitlab Utils MCP Server',
     version: '0.0.1',
   })
 
@@ -44,7 +44,7 @@ export default function createStatelessServer({
         .describe('32-character secret of the upload'),
       filename: z.string().describe('Filename of the upload'),
     },
-    async ({ projectId, secret, filename }) => {
+    ({ filename, projectId, secret }) => {
       const url = joinURL(
         config.gitlabApiUrl,
         'projects',

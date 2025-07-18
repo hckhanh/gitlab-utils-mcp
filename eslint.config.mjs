@@ -15,15 +15,10 @@ export default tsEslint.config(
   // Base configuration - ignore patterns
   {
     ignores: [
-      '**/.output/**',
-      '**/.vercel/**',
-      '**/.nitro/**',
-      '**/.tanstack/**',
+      '**/.smithery/**',
       '**/coverage/**',
       '**/node_modules/**',
-      '**/.pnpm-store/**',
       '**/*.d.ts',
-      '**/.vite',
     ],
   },
 
