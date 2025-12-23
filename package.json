@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.31.0",
-    "@smithery/cli": "1.2.16",
+    "@smithery/cli": "1.6.7",
     "@typescript-eslint/parser": "8.38.0",
     "eslint": "9.31.0",
     "eslint-plugin-import-x": "4.16.1",
