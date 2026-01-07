@@ -10,7 +10,7 @@
     "dev": "cli dev"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.16.0",
+    "@modelcontextprotocol/sdk": "1.25.2",
     "ofetch": "^1.4.1",
     "string-collapse-white-space": "11.0.23",
     "typescript": "5.8.3",
