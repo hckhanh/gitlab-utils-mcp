@@ -28,7 +28,7 @@
     "knip": "5.62.0",
     "prettier": "3.6.2",
     "syncpack": "13.0.4",
-    "tsx": "4.20.3",
+    "tsx": "4.23.13",
     "typescript-eslint": "8.38.0"
   },
   "keywords": [],
