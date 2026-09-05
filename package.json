@@ -20,7 +20,7 @@
   "devDependencies": {
     "@eslint/js": "9.31.0",
     "@smithery/cli": "1.2.16",
-    "@typescript-eslint/parser": "8.38.0",
+    "@typescript-eslint/parser": "8.69.0",
     "eslint": "9.31.0",
     "eslint-plugin-import-x": "4.16.1",
     "eslint-plugin-perfectionist": "4.15.0",
@@ -29,7 +29,7 @@
     "prettier": "3.6.2",
     "syncpack": "13.0.4",
     "tsx": "4.20.3",
-    "typescript-eslint": "8.38.0"
+    "typescript-eslint": "8.69.0"
   },
   "keywords": [],
   "license": "MIT",
